@@ -1,13 +1,16 @@
 /**
  * Problem 7: Sum with Reducing
- * 
+ *
  * Given a list of numbers, compute the sum of the list.
  * This time, use the .reduce function.
- * 
+ *
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+  const sum = numbers.reduce(function(result, num) {
+    return result + num;
+  }, 0)
+    return sum;
 }
 
 const tests = [

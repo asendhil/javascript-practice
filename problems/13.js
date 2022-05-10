@@ -1,14 +1,17 @@
 /**
  * Problem 15: Ternary Operator
- * 
+ *
  * Given a grade, return "Pass" if it is at least 60 or fail if it is below 60.
  * Use a ternary operator.
- * 
+ *
  * @example 79 -> "Pass"
  * @example 54 -> "Fail"
 */
 function problem(grade) {
-    return null;
+  pass = grade >= 60;
+  //fail = grade < 60;
+  status = pass ? "Pass" : "Fail";
+    return status;
 }
 
 const tests = [
